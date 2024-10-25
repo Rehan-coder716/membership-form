@@ -1,13 +1,79 @@
 components:
-- components: []
+- components:
+  - layout_properties: {grid_position: 'AHXVNC,NVPKNM'}
+    name: label_5
+    properties: {align: center, bold: true, font: '', font_size: 28, icon_align: top, text: Join the best gym in town!!, underline: false}
+    type: Label
+  - layout_properties: {grid_position: 'GFFVKC,RZZLRU'}
+    name: label_1
+    properties: {bold: true, font_size: 20, text: Enter Your Name}
+    type: Label
+  - layout_properties: {grid_position: 'FSLOAS,WQUYVH'}
+    name: text_box_1
+    properties: {text: Your name}
+    type: TextBox
+  - layout_properties: {grid_position: 'CMVDQJ,WYBKXP'}
+    name: label_2
+    properties: {bold: true, font_size: 20, text: Enter Your Weight}
+    type: Label
+  - layout_properties: {grid_position: 'FJKSTG,RWFONG'}
+    name: text_box_2
+    properties: {text: Your weight}
+    type: TextBox
+  - layout_properties: {grid_position: 'WCWVTV,DPXKTF'}
+    name: label_8
+    properties: {bold: true, font_size: 20, text: Your Address}
+    type: Label
+  - layout_properties: {grid_position: 'KBLMFP,FOQPSH'}
+    name: text_area_1
+    properties: {text: Enter your full address}
+    type: TextArea
+  - layout_properties: {grid_position: 'ICSPUC,IWYBVE'}
+    name: label_3
+    properties: {bold: true, font: '', font_size: 20, text: 'Do You Need Personal Training?'}
+    type: Label
+  - layout_properties: {grid_position: 'GJFNCC,ROLLJS'}
+    name: check_box_1
+    properties: {text: 'Yes'}
+    type: CheckBox
+  - layout_properties: {grid_position: 'SOZPFL,ZQFWDQ'}
+    name: check_box_2
+    properties: {text: 'No'}
+    type: CheckBox
+  - layout_properties: {grid_position: 'IEHDFT,OXUEQG'}
+    name: label_9
+    properties: {bold: true, font_size: 20, text: Enter Your Email}
+    type: Label
+  - layout_properties: {grid_position: 'BZQHGG,YPNHUJ'}
+    name: text_box_3
+    properties: {text: Your email}
+    type: TextBox
+  - event_bindings: {click: outlined_button_1_click}
+    layout_properties: {full_width_row: false, grid_position: 'ERBTDW,CPYYVF'}
+    name: outlined_button_1
+    properties: {background: black, bold: true, font_size: 17, foreground: white, role: null, spacing_above: medium, spacing_below: small, text: Submit}
+    type: Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
   type: ColumnPanel
-- layout_properties: {slot: nav-right}
+- components:
+  - layout_properties: {}
+    name: label_6
+    properties: {bold: true, text: HOME}
+    type: Label
+  - layout_properties: {}
+    name: label_7
+    properties: {bold: true, text: ABOUT}
+    type: Label
+  layout_properties: {slot: nav-right}
   name: navbar_links
   properties: {}
   type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_4
+  properties: {bold: true, font_size: 25, text: GYM FITNESS, underline: true}
+  type: Label
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
