@@ -1,3 +1,6 @@
+import anvil.google.auth, anvil.google.drive, anvil.google.mail
+from anvil.google.drive import app_files
+import anvil.users
 import anvil.email
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -20,4 +23,3 @@ import anvil.server
 def submit(name, weight, address, personal, email):
   app_tables.gym.add_row(address=address,name=name,weight=weight,personal=personal,email=email)
   anvil.email.send(to= "{email}", subject="Response from anvil app", text=f"Feedback from {name}: weight is {weight} and they live at : {address}. Feedback is: {personal}")
-  
